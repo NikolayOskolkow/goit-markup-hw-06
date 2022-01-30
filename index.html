@@ -422,13 +422,22 @@
         </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="close-svg" width="14" height="14">
                     <use href="./img/sprite/icons.svg#icon-close"></use>
                 </svg>
             </button>
+                <p class="modal-title">
+                    Оставьте свои данные, мы вам перезвоним
+                </p>
+                <form action="#">
+                    <input type="text" class="form-imput" name="user-name" placeholder="Имя">
+                    <input type="text" class="form-imput" name="user-tel" placeholder="Телефон">
+                    <input type="text" class="form-imput" name="user-email" placeholder="Почта">
+                </form>
+                <button class="button-form" type="submit">Отправить</button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
