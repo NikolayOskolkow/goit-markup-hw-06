@@ -433,11 +433,32 @@
                     Оставьте свои данные, мы вам перезвоним
                 </p>
                 <form action="#">
-                    <input type="text" class="form-imput" name="user-name" placeholder="Имя">
-                    <input type="text" class="form-imput" name="user-tel" placeholder="Телефон">
-                    <input type="text" class="form-imput" name="user-email" placeholder="Почта">
+                    <div class="form-field">
+                    <label class="input-text" for="user-name">Имя</label>
+                    <input type="text" class="form-imput"
+                        name="user-name"
+                        placeholder=""
+                        required minlength="2"
+                        id="user-name" />
+                    </div>
+                    <div class="form-field">
+                    <label class="input-text" for="user-tel">Телефон</label>
+                    <input type="tel" class="form-imput"
+                        name="user-tel"
+                        placeholder=""
+                        required
+                        id="user-tel" />
+                    </div>
+                    <div class="form-field">
+                    <label class="input-text"for="user-email">Почта</label>
+                    <input type="email" class="form-imput"
+                        name="user-email"
+                        placeholder=""
+                        required
+                        id="user-email" />
+                    </div>
+                    <button class="button-form" type="submit">Отправить</button>
                 </form>
-                <button class="button-form" type="submit">Отправить</button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
