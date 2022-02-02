@@ -697,6 +697,48 @@ h1 {
   align-items: baseline;
 }
 
+.mailinglist-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.mailinglist-input {
+  color: #ffffff;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #2f303a;
+}
+
+.mailinglist-butoom {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border: none;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 50px;
+  min-width: 200px;
+}
+
+.footer-mailinglist {
+  margin-left: auto;
+}
+
+.footer-mailinglist .mailinglist-input {
+  margin-right: 12px;
+}
+
 /* ----------------modal------------ */
 .backdrop {
   position: fixed;
@@ -774,6 +816,7 @@ h1 {
 }
 
 .form-text {
+  resize: none;
   padding-top: 12px;
   padding-left: 16px;
   width: 100%;
@@ -781,23 +824,12 @@ h1 {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  resize: none;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field > .textarea {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.form-text::placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
 }

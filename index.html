@@ -420,9 +420,20 @@
         </li>
         </ul>
         </div>
+        <div class="footer-mailinglist">
+            <h3 class="mailinglist-title">Подпишитесь на рассылку</h3>
+            <form action="#">
+            <label for=""></label>
+            <input class="mailinglist-input" type="user-email"
+            name="user-email"
+            required
+            placeholder="E-mail">
+            <button class="mailinglist-butoom" type="submit">Подписаться</button>
+            </form>
+        </div>
         </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="close-svg" width="14" height="14">
@@ -463,8 +474,7 @@
                     <textarea name="user-text" 
                         id="user-text"
                         class="form-text"
-                        placeholder="Введите текст">
-                    </textarea>
+                        placeholder="Введите текст"></textarea>
                     </div>
                     <button class="button-form" type="submit">Отправить</button>
                 </form>
