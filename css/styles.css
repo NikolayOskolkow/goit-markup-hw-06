@@ -667,7 +667,6 @@ h1 {
   height: 44px;
   border-radius: 50%;
   background-color: #44454e;
-  justify-content: center;
 }
 
 .footer-svg {
@@ -718,7 +717,8 @@ h1 {
   background: #2f303a;
 }
 
-.mailinglist-butoom {
+.mailinglist-button {
+  padding: 0 63px 0 29px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -731,12 +731,27 @@ h1 {
   min-width: 200px;
 }
 
+.telegram-svg {
+  position: absolute;
+  margin-left: 11px;
+  fill: #ffffff;
+}
+
 .footer-mailinglist {
   margin-left: auto;
 }
 
 .footer-mailinglist .mailinglist-input {
   margin-right: 12px;
+}
+
+.mailinglist-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* ----------------modal------------ */
@@ -817,8 +832,7 @@ h1 {
 
 .form-text {
   resize: none;
-  padding-top: 12px;
-  padding-left: 16px;
+  padding: 12px 16px;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
